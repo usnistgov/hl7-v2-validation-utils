@@ -1,0 +1,57 @@
+<ProfileSlicing ID="0e1ad9a4-c3d0-4d58-ab92-c67d9c99f2a8">
+    <SegmentSlicing>
+        <Message ID="UNKNOWN_SLICING_MESSAGE_REFERENCE">
+            <GroupContext ID="6560d6958b87bc000758963d">
+                <AssertionSlicing Position="3">
+                    <Slice Ref="PID_IZ">
+                        <Description>If PID-2 (Patient ID) is valued </Description>
+                        <Assertion>
+                            <Presence Path="2[1]"/>
+                        </Assertion>
+                    </Slice>
+                </AssertionSlicing>
+            </GroupContext>
+            <GroupContext ID="6560d6958b87bc000758963d-6">
+                <OccurrenceSlicing Position="1">
+                    <Slice Occurrence="1" Ref="UNKNOWN_SLICING_SEGMENT_OCCURRENCE_REFERENCE"/>
+                </OccurrenceSlicing>
+            </GroupContext>
+            <GroupContext ID="UNKNOWN_SLICING_GROUP_REFERENCE">
+                <AssertionSlicing Position="2">
+                    <Slice Ref="TQ2">
+                        <Description>If TQ2-2 (Sequence/Results Flag) is valued </Description>
+                        <Assertion>
+                            <Presence Path="2[1]"/>
+                        </Assertion>
+                    </Slice>
+                    <Slice Ref="UNKNOWN_SLICING_SEGMENT_ASSERTION_REFERENCE">
+                        <Description>If TQ2-2 (Sequence/Results Flag) is valued </Description>
+                        <Assertion>
+                            <Presence Path="2[1]"/>
+                        </Assertion>
+                    </Slice>
+                </AssertionSlicing>
+            </GroupContext>
+        </Message>
+    </SegmentSlicing>
+    <FieldSlicing>
+        <SegmentContext ID="PID_IZ">
+            <OccurrenceSlicing Position="8">
+                <Slice Occurrence="1" Ref="IS"/>
+            </OccurrenceSlicing>
+        </SegmentContext>
+        <SegmentContext ID="UNKNOWN_SLICING_SEGMENT_REFERENCE">
+            <OccurrenceSlicing Position="8">
+                <Slice Occurrence="1" Ref="UNKNOWN_SLICING_DATATYPE_OCCURRENCE_REFERENCE"/>
+            </OccurrenceSlicing>
+            <AssertionSlicing Position="2">
+                <Slice Ref="UNKNOWN_SLICING_DATATYPE_ASSERTION_REFERENCE">
+                    <Description>If TQ2-2 (Sequence/Results Flag) is valued </Description>
+                    <Assertion>
+                        <Presence Path="2[1]"/>
+                    </Assertion>
+                </Slice>
+            </AssertionSlicing>
+        </SegmentContext>
+    </FieldSlicing>
+</ProfileSlicing>

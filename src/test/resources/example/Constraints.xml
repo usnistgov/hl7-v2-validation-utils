@@ -1,0 +1,143 @@
+<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd"
+                    UUID="dac04a0d-b5e1-4719-ad99-10b6d97dec39">
+    <MetaData Name="References Test IG" OrgName="No Org Info" Version="2.5.1" Date="No Date Info"/>
+    <Predicates>
+        <Datatype>
+            <ByID ID="UNKNOWN_PREDICATE_DATATYPE_REFERENCE">
+                <Predicate Target="2[1]" TrueUsage="R" FalseUsage="X">
+                    <Description>If MSH is valued </Description>
+                    <Condition>
+                        <Presence Path="1[1]"/>
+                    </Condition>
+                </Predicate>
+            </ByID>
+        </Datatype>
+        <Segment>
+            <ByID ID="UNKNOWN_PREDICATE_SEGMENT_REFERENCE">
+                <Predicate Target="2[1]" TrueUsage="R" FalseUsage="X">
+                    <Description>If MSH is valued </Description>
+                    <Condition>
+                        <Presence Path="1[1]"/>
+                    </Condition>
+                </Predicate>
+            </ByID>
+        </Segment>
+        <Group>
+            <ByID ID="UNKNOWN_PREDICATE_GROUP_REFERENCE">
+                <Predicate Target="2[1]" TrueUsage="R" FalseUsage="X">
+                    <Description>If MSH is valued </Description>
+                    <Condition>
+                        <Presence Path="1[1]"/>
+                    </Condition>
+                </Predicate>
+            </ByID>
+        </Group>
+        <Message>
+            <ByID ID="6560d6958b87bc000758963d">
+                <Predicate Target="2[1]" TrueUsage="R" FalseUsage="X">
+                    <Description>If MSH is valued </Description>
+                    <Condition>
+                        <Presence Path="1[1]"/>
+                    </Condition>
+                </Predicate>
+            </ByID>
+            <ByID ID="UNKNOWN_PREDICATE_MESSAGE_REFERENCE">
+                <Predicate Target="2[1]" TrueUsage="R" FalseUsage="X">
+                    <Description>If MSH is valued </Description>
+                    <Condition>
+                        <Presence Path="1[1]"/>
+                    </Condition>
+                </Predicate>
+            </ByID>
+        </Message>
+    </Predicates>
+    <Constraints>
+        <Datatype>
+            <ByID ID="UNKNOWN_CONSTRAINT_DATATYPE_REFERENCE">
+                <Constraint ID="DTM_DateTimeConstraint">
+                    <Description>The value SHALL follow the Date/Time pattern
+                        'YYYY[MM[DD[HH[MM[SS[.S[S[S[S]]]]]]]]][+/-ZZZZ]'.
+                    </Description>
+                    <Assertion>
+                        <Format Path="."
+                                Regex="^(\d{4}|\d{6}|\d{8}|\d{10}|\d{12}|\d{14}|\d{14}\.\d|\d{14}\.\d{2}|\d{14}\.\d{3}|\d{14}\.\d{4})([+-]\d{4})?$"/>
+                    </Assertion>
+                </Constraint>
+            </ByID>
+            <ByID ID="DTM">
+                <Constraint ID="DTM_DateTimeConstraint">
+                    <Description>The value SHALL follow the Date/Time pattern
+                        'YYYY[MM[DD[HH[MM[SS[.S[S[S[S]]]]]]]]][+/-ZZZZ]'.
+                    </Description>
+                    <Assertion>
+                        <Format Path="."
+                                Regex="^(\d{4}|\d{6}|\d{8}|\d{10}|\d{12}|\d{14}|\d{14}\.\d|\d{14}\.\d{2}|\d{14}\.\d{3}|\d{14}\.\d{4})([+-]\d{4})?$"/>
+                    </Assertion>
+                </Constraint>
+            </ByID>
+            <ByID ID="DT">
+                <Constraint ID="DT_DateTimeConstraint">
+                    <Description>The value SHALL follow the Date/Time pattern 'YYYY[MM[DD]]'.</Description>
+                    <Assertion>
+                        <Format Path="." Regex="^(\d{4}|\d{6}|\d{8})$"/>
+                    </Assertion>
+                </Constraint>
+            </ByID>
+            <ByID ID="TM">
+                <Constraint ID="TM_DateTimeConstraint">
+                    <Description>The value SHALL follow the Date/Time pattern 'HH[MM[SS[.S[S[S[S]]]]]][+/-ZZZZ]'.
+                    </Description>
+                    <Assertion>
+                        <Format Path="."
+                                Regex="^(\d{2}|\d{4}|\d{6}|\d{6}\.\d|\d{6}\.\d{2}|\d{6}\.\d{3}|\d{6}\.\d{4})([+-]\d{4})?$"/>
+                    </Assertion>
+                </Constraint>
+            </ByID>
+        </Datatype>
+        <Segment>
+            <ByID ID="UNKNOWN_CONSTRAINT_SEGMENT_REFERENCE">
+                <Constraint ID="DTM_DateTimeConstraint">
+                    <Description>The value SHALL follow the Date/Time pattern
+                        'YYYY[MM[DD[HH[MM[SS[.S[S[S[S]]]]]]]]][+/-ZZZZ]'.
+                    </Description>
+                    <Assertion>
+                        <Format Path="."
+                                Regex="^(\d{4}|\d{6}|\d{8}|\d{10}|\d{12}|\d{14}|\d{14}\.\d|\d{14}\.\d{2}|\d{14}\.\d{3}|\d{14}\.\d{4})([+-]\d{4})?$"/>
+                    </Assertion>
+                </Constraint>
+            </ByID>
+        </Segment>
+        <Group>
+            <ByID ID="UNKNOWN_CONSTRAINT_GROUP_REFERENCE">
+                <Constraint ID="DTM_DateTimeConstraint">
+                    <Description>The value SHALL follow the Date/Time pattern
+                        'YYYY[MM[DD[HH[MM[SS[.S[S[S[S]]]]]]]]][+/-ZZZZ]'.
+                    </Description>
+                    <Assertion>
+                        <Format Path="."
+                                Regex="^(\d{4}|\d{6}|\d{8}|\d{10}|\d{12}|\d{14}|\d{14}\.\d|\d{14}\.\d{2}|\d{14}\.\d{3}|\d{14}\.\d{4})([+-]\d{4})?$"/>
+                    </Assertion>
+                </Constraint>
+            </ByID>
+        </Group>
+        <Message>
+            <ByID ID="6560d6958b87bc000758963d">
+                <Constraint ID="IZ-01" Strength="SHALL">
+                    <Description>MSH-3.1 (Namespace ID) shall contain the value 'ABC' (Case Sensitive).</Description>
+                    <Assertion>
+                        <PlainText Path="1[1].3[1].1[1]" Text="ABC" IgnoreCase="false" NotPresentBehavior="PASS"/>
+                    </Assertion>
+                </Constraint>
+            </ByID>
+            <ByID ID="UNKNOWN_CONSTRAINT_MESSAGE_REFERENCE">
+                <Constraint ID="IZ-01" Strength="SHALL">
+                    <Description>MSH-3.1 (Namespace ID) shall contain the value 'ABC' (Case Sensitive).</Description>
+                    <Assertion>
+                        <PlainText Path="1[1].3[1].1[1]" Text="ABC" IgnoreCase="false" NotPresentBehavior="PASS"/>
+                    </Assertion>
+                </Constraint>
+            </ByID>
+        </Message>
+    </Constraints>
+</ConformanceContext>

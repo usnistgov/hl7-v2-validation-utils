@@ -1,0 +1,30 @@
+<CoConstraintContext ID="52bbd444-224b-4e21-a577-fd115d5885ae">
+    <ByMessage ID="UNKNOWN_CC_MESSAGE_REFERENCE">
+        <Context Name="ORDER" Path="9[*]">
+            <Segment Name="OBX" Path="5[*].1[*]">
+                <SimpleTable>
+                    <CoConstraint Min="1" Max="*" Usage="R">
+                        <Selectors>
+                            <Code Name="OBX-3" Code="ABC" CodeSystem="DEF" Path="3[*]">
+                                <BindingLocation Position="1" CodePath="1[1]" CodeSystemPath="3[1]"/>
+                            </Code>
+                        </Selectors>
+                        <Constraints>
+                            <PlainText Name="OBX-2" Path="2[*]" Value="CE"/>
+                            <ValueSet Name="OBX-5" Path="5[*]">
+                                <ValueSetBinding Target="." BindingStrength="R">
+                                    <BindingLocations>
+                                        <ComplexBindingLocation CodeLocation="4[1]" CodeSystemLocation="6[1]"/>
+                                    </BindingLocations>
+                                    <Bindings>
+                                        <Binding BindingIdentifier="UNKNOWN_CC_VS_REFERENCE"/>
+                                    </Bindings>
+                                </ValueSetBinding>
+                            </ValueSet>
+                        </Constraints>
+                    </CoConstraint>
+                </SimpleTable>
+            </Segment>
+        </Context>
+    </ByMessage>
+</CoConstraintContext>
